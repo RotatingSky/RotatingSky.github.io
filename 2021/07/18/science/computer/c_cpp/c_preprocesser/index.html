@@ -14,7 +14,7 @@
   <meta name="description" content>
   <meta name="author" content="Sny">
   <meta name="keywords" content>
-  <title>归档 ~ Rotating Sky</title>
+  <title>C预处理器 ~ Rotating Sky</title>
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
@@ -101,6 +101,9 @@
             </span>
 
             
+              <br>
+              <p>星期日, 七月 18日 2021, 4:48 下午</p>
+            
           </div>
 
           
@@ -111,53 +114,90 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 11 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/01/02/mathematics/set_thoery/chapter_1/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">1. 集合论公理</span>
-      <span style="float: right;">01-02</span>
-    </a>
-  
-    
-    <a href="/2021/01/02/mathematics/analysis/chapter_1/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">第一讲 连续统</span>
-      <span style="float: right;">01-02</span>
-    </a>
-  
-    
-    <a href="/2021/01/02/science/computer/algorithms/chapter_1/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title"></span>
-      <span style="float: right;">01-02</span>
-    </a>
-  
-    
-    <a href="/2021/01/02/from-now-on/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">从现在开始</span>
-      <span style="float: right;">01-02</span>
-    </a>
-  
-</div>
 
-
-              </div>
-            </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto">
+          <div class="markdown-body">
+            <h1 id="翻译程序的第一步"><a href="#翻译程序的第一步" class="headerlink" title="翻译程序的第一步"></a>翻译程序的第一步</h1><p>在预处理之前，编译器会对程序进行一些翻译处理：</p>
+<ol>
+<li>编译器可以把源代码中出现的字符映射到源字符集，这个过程处理多字节字符和三字节字符序列</li>
+<li>编译器定位每个反斜杠后面跟着换行符的实例，并删除它们（例如将下面两个物理行转换为一个逻辑行）<pre><code class="lang-c">printf(&quot;That&#39;s wond\
+    erful!\n&quot;);
+// convert to
+printf(&quot;That&#39;s wonderful!\n&quot;);
+</code></pre>
+</li>
+<li>编译器把文本划分为预处理记号序列、空白序列和注释序列（记号是由空格、制表符或换行符分隔的项），<strong>这里需要需要注意的是：编译器将用一个空格字符替换每一条注释</strong>。</li>
+</ol>
+<h1 id="define"><a href="#define" class="headerlink" title="#define"></a>#define</h1><h2 id="明示常量"><a href="#明示常量" class="headerlink" title="明示常量"></a>明示常量</h2><p>可以出现在源文件的任何地方，它的定义从指令出现的地方到文件末尾都是有效的。（其中宏名称中不能出现空格）</p>
+<pre><code class="lang-c">// 预处理指令 宏名称 替换体
+#define FMT &quot;X is %d.\n&quot;
+</code></pre>
+<p>我们可以用上面的宏作为 printf 的格式字符串：</p>
+<pre><code class="lang-c">#define FMT &quot;X is %d.\n&quot;
+x = 2;
+printf(FMT, x);
+</code></pre>
+<blockquote>
+<p>我们也可以使用这种方式达到和宏定义类似的效果：</p>
+<pre><code class="lang-c">const char * fmt = &quot;X is %d.\n&quot;;
+x = 2;
+printf(fmt, x);
+</code></pre>
+</blockquote>
+<h2 id="带参数宏"><a href="#带参数宏" class="headerlink" title="带参数宏"></a>带参数宏</h2>
+            <hr>
+          </div>
+          <br>
+          <div>
+            
+              <p>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E7%AC%94%E8%AE%B0">笔记</a>
+                  &nbsp;
+                
+              </p>
+            
+            <p>
+              <i class="iconfont icon-tag"></i>
+              
+                <a class="hover-with-bg" href="/tags/C/C++">C/C++</a>
+              
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -211,6 +251,11 @@
   <script src="/js/lazyload.js" ></script>
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
   <script src="/lib/prettify/prettify.min.js" ></script>
   <script>
@@ -226,7 +271,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "C预处理器&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 100,

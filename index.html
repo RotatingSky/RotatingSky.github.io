@@ -128,6 +128,59 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2021/07/18/science/computer/c_cpp/c_preprocesser/">
+        <p class="h4 index-header">C预处理器</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">翻译程序的第一步在预处理之前，编译器会对程序进行一些翻译处理：
+
+编译器可以把源代码中出现的字符映射到源字符集，这个过程处理多字节字符和三字节字符序列
+编译器定位每个反斜杠后面跟着换行符的实例，并删除它们（例如将下面两个物理行转换为一个逻辑行）printf(&quot;That&#39;s wond\
+    erful!\n&quot;);
+// convert to
+printf(&quot;That&#39;s wonderful!\n&quot;);
+
+
+编译器把文本划分为预处理记号序列、空白序列和注释序列（记号是由空格、制表符或换行符分隔的项），这里需要需要注意的是：编译器将用一个空格字符替换每一条注释。
+
+#define明示常量可以出现在源文件的任何地方，它的定义从指令出现的地方到文件末尾都是有效的。（其中宏名称中不能出现空格）
+// 预处理指令 宏名称 替换体
+#define FMT &quot;X is %d.\n&quot;
+
+我们可以用上面的宏作为 printf 的格式字符串：
+#define FMT &quot;X is %d.\n&quot;
+x = 2;
+pr</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2021-07-18&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%AC%94%E8%AE%B0">笔记</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/C/C++">C/C++</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2021/07/18/mathematics/modern_algebra/chapter_0/">
         <p class="h4 index-header">绪论</p>
         
@@ -382,7 +435,7 @@
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">有时候感觉人需要给自己立一个Flag，不然就会烂到一点都不想动。Flag还需要写下来，或者公诸于他人，不然又会因为“同情自己的努力”而半途而废。周末想起来要理发，总是会拖延到下个周末；说好要在2020年每天慢跑锻炼身体，却一直到2021年的第一天都没有跑过一次；买了很多书，但每次翻开都是第一页…
+          <div class="index-text mb-1">有时候感觉人需要给自己立一个Flag，不然就会懒到一点都不想动。Flag还需要写下来，或者公诸于他人，不然又会因为“同情自己的努力”而半途而废。周末想起来要理发，总是会拖延到下个周末；说好要在2020年每天慢跑锻炼身体，却一直到2021年的第一天都没有跑过一次；买了很多书，但每次翻开都是第一页…
 我需要一个新的Flag来拯救“自己的理想”了，一次无奈的尝试，不想每天都充满遗憾地走过。从现在开始…
 </div>
         </div>
@@ -408,45 +461,18 @@
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/09/29/hello-world/">
-        <p class="h4 index-header">Hello World</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new &quot;My New Post&quot;
-
-More info: Writing
-Run server$ hexo server
-
-More info: Server
-Generate static files$ hexo generate
-
-More info: Generating
-Deploy to remote sites$ hexo deploy
-
-More info: Deployment
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-09-29&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
 
 
+  <nav aria-label="index posts navigation">
+    <ul class="pagination pg-blue justify-content-center mt-5">
+      
+      
+        <li class="page-item">
+          <a class="page-link" href="/page/2/#board">下一页</a>
+        </li>
+      
+    </ul>
+  </nav>
 
 
 
