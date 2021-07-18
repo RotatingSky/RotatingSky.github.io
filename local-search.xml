@@ -4,23 +4,125 @@
   
   
   <entry>
-    <title>第一讲 连续统</title>
-    <link href="undefined2021/01/02/mathematics/analysis/chapter_1/"/>
-    <url>2021/01/02/mathematics/analysis/chapter_1/</url>
+    <title>绪论</title>
+    <link href="undefined2021/07/18/mathematics/modern_algebra/chapter_0/"/>
+    <url>2021/07/18/mathematics/modern_algebra/chapter_0/</url>
     
-    <content type="html"><![CDATA[<h2 id="从连续统开始"><a href="#从连续统开始" class="headerlink" title="从连续统开始"></a>从连续统开始</h2><p>为了定义最为重要和首要的数学分析概念——<strong>函数关系</strong>，要清晰地定义函数关系，需要充分认识函数的<strong>定义域</strong>。而最常见的函数定义域是所有实数的集合，这个集合在数学中称为<strong>连续统</strong>。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-近世代数简史"><a href="#1-近世代数简史" class="headerlink" title="1. 近世代数简史"></a>1. 近世代数简史</h1><p>大约在公元前1700年左右，古巴比伦人就已经知道一元二次方程的一种解法了。然后，人们从得到一元二次方程的正根开始，接受了方程的负根，承认了无理数，并最终发现了虚数根。可以说，人们对一元二次方程方程认识的不断加深，直接推动了数学的发展。不过，我们先暂停一下，有一个问题我们还没有说清楚：为什么人们要解决一元二次方程呢？或者说人们是如何发现“一元二次方程”这个问题的呢？我觉得有下面几个原因：</p><ol><li>人们已经实际生活的分配问题中，对分数有了一定的认识，并且已经可以总结出“一元一次方程”的问题</li><li>由于土地、建筑测量的需求的增加，当乘积和面积的概念被定义时，就能够总结出“一元二次方程”的问题</li></ol><p>或者这个问题真的来源于某个人的奇思妙想，但是我觉得更有可能来源于解决实际问题的需求。从这个时候开始，数学在人类智慧的土壤中才开始萌芽。</p><p>人们对一元二次方程的认识过程长达三千多年，直到16世纪的韦达（Vieta，1540~1603）才基本弄清楚一般情况下一元二次方程方程的解，并给出了根与系数的关系。其中根与系数的关系，对我们认识一元二次方程方程以及更高次方程很有帮助，所以在这里我想描述一下这个关系。</p><p>如果一般的一元二次方程可以表示为：<br>$$<br>ax^2 + bx + c = 0, (a \neq 0, x \in \mathbb{C}) \tag{1}<br>$$<br>那么一元二次方程的根（$x_1$, $x_2$）与系数（$a$, $b$, $c$）的关系如下：</p><ul><li>$x_1 + x_2 = -b/a$</li><li>$x_1 \cdot x_2 = c/a$</li></ul><p>这个关系可以不通过求根公式得到，也就是说上面的关系是一个关于一元二次方程非常基本的结论。</p><blockquote><p><strong>根与系数关系的推导：</strong></p><p>首先我们根据<strong>代数基本定理</strong>（不知道代数基本定理，可以先把它看作：方程最高次是多少，就有多少个根）知道一元二次方程有两个根。根据这个前提条件，我们可以将原先的一元二次方程表示为：$a(x - x_1)(x - x_2) = 0, (a \neq 0, x \in \mathbb{C})$</p><p>然后，我们把上面的式子展开，就可以得到：<br>$$<br>ax^2 - a(x_1 + x_2)x + ax_1x_2 = 0, (a \neq 0, x \in \mathbb{C}) \tag{2}<br>$$<br>对比公式 (1) 和公式 (2)，可以得到根与系数的关系。</p><p>最近还有人根据上面的关系得到了一种一元二次方程的解法，挺有意思的，这里也说一下。</p><p>首先可以根据根与系数的关系式得到：<br>$$<br>r=-b/2a \tag{3}<br>$$<br>令 $x_1 = r + s$，$x_2 = r - s$，所以可以从根与系数关系中进一步得到：<br>$$<br>x_1x_2 = r^2 - s^2 = c/a \tag{4}<br>$$<br>从而可以比较容易地计算出：<br>$$<br>s = \pm \sqrt{r^2 - c/a} \tag{5}<br>$$<br>得到两个根 $x_1, x_2$</p></blockquote><p>二次方程的问题研究清楚后，三次、四次方程直到公元1500年左右才得到了解的公式。</p>]]></content>
     
     
     <categories>
       
-      <category>数学分析</category>
+      <category>笔记</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>笔记</tag>
+      <tag>近世代数</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="undefined2021/07/04/science/computer/refactor/charpter_1/"/>
+    <url>2021/07/04/science/computer/refactor/charpter_1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="undefined2021/07/04/mathematics/probability_models/chapter_1/"/>
+    <url>2021/07/04/mathematics/probability_models/chapter_1/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="undefined2021/03/14/science/computer/design_pattern/FSM_in_C/"/>
+    <url>2021/03/14/science/computer/design_pattern/FSM_in_C/</url>
+    
+    <content type="html"><![CDATA[<p>FSM</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="undefined2021/02/13/science/physics/quantum/Untitled/"/>
+    <url>2021/02/13/science/physics/quantum/Untitled/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>1. 集合论公理</title>
+    <link href="undefined2021/01/02/mathematics/set_thoery/chapter_1/"/>
+    <url>2021/01/02/mathematics/set_thoery/chapter_1/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Zermelo-Fraenkel公理"><a href="#Zermelo-Fraenkel公理" class="headerlink" title="Zermelo-Fraenkel公理"></a>Zermelo-Fraenkel公理</h2><ol><li></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>集合论</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>第一讲 连续统</title>
+    <link href="undefined2021/01/02/mathematics/analysis/chapter_1/"/>
+    <url>2021/01/02/mathematics/analysis/chapter_1/</url>
+    
+    <content type="html"><![CDATA[<p><strong>该系列来自《数学分析八讲》</strong></p><h2 id="从连续统开始"><a href="#从连续统开始" class="headerlink" title="从连续统开始"></a>从连续统开始</h2><p>为了定义最为重要和首要的数学分析概念——<strong>函数关系</strong>，要清晰地定义函数关系，需要充分认识函数的<strong>定义域</strong>。而最常见的函数定义域是所有实数的集合，这个集合在数学中称为<strong>连续统</strong>。</p><p>对于连续统这个概念，我们首先会想到的问题是：</p><ol><li>什么是实数？</li><li>什么时候以及为什么我们相信实际上已经掌握<strong>所有</strong>实数？</li></ol><h2 id="连续统理论"><a href="#连续统理论" class="headerlink" title="连续统理论"></a>连续统理论</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数学分析</tag>
       
     </tags>
     
@@ -49,10 +151,16 @@
     <content type="html"><![CDATA[<p>有时候感觉人需要给自己立一个Flag，不然就会烂到一点都不想动。Flag还需要写下来，或者公诸于他人，不然又会因为“同情自己的努力”而半途而废。周末想起来要理发，总是会拖延到下个周末；说好要在2020年每天慢跑锻炼身体，却一直到2021年的第一天都没有跑过一次；买了很多书，但每次翻开都是第一页…</p><p>我需要一个新的Flag来拯救“自己的理想”了，一次无奈的尝试，不想每天都充满遗憾地走过。从现在开始…</p>]]></content>
     
     
+    <categories>
+      
+      <category>感想</category>
+      
+    </categories>
+    
     
     <tags>
       
-      <tag>感想</tag>
+      <tag>Flag</tag>
       
     </tags>
     

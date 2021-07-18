@@ -14,7 +14,7 @@
   <meta name="description" content>
   <meta name="author" content="Sny">
   <meta name="keywords" content>
-  <title>标签 ~ Rotating Sky</title>
+  <title>绪论 ~ Rotating Sky</title>
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
@@ -101,6 +101,9 @@
             </span>
 
             
+              <br>
+              <p>星期日, 七月 18日 2021, 3:57 下午</p>
+            
           </div>
 
           
@@ -111,22 +114,84 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<div class="text-center tagcloud">
-  <a href="/tags/Flag/" style="font-size: 15px; color: #bbe">Flag</a> <a href="/tags/数学分析/" style="font-size: 15px; color: #bbe">数学分析</a> <a href="/tags/近世代数/" style="font-size: 15px; color: #bbe">近世代数</a> <a href="/tags/集合论/" style="font-size: 15px; color: #bbe">集合论</a>
-</div>
-              </div>
-            </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto">
+          <div class="markdown-body">
+            <h1 id="1-近世代数简史"><a href="#1-近世代数简史" class="headerlink" title="1. 近世代数简史"></a>1. 近世代数简史</h1><p>大约在公元前1700年左右，古巴比伦人就已经知道一元二次方程的一种解法了。然后，人们从得到一元二次方程的正根开始，接受了方程的负根，承认了无理数，并最终发现了虚数根。可以说，人们对一元二次方程方程认识的不断加深，直接推动了数学的发展。不过，我们先暂停一下，有一个问题我们还没有说清楚：为什么人们要解决一元二次方程呢？或者说人们是如何发现“一元二次方程”这个问题的呢？我觉得有下面几个原因：</p>
+<ol>
+<li>人们已经实际生活的分配问题中，对分数有了一定的认识，并且已经可以总结出“一元一次方程”的问题</li>
+<li>由于土地、建筑测量的需求的增加，当乘积和面积的概念被定义时，就能够总结出“一元二次方程”的问题</li>
+</ol>
+<p>或者这个问题真的来源于某个人的奇思妙想，但是我觉得更有可能来源于解决实际问题的需求。从这个时候开始，数学在人类智慧的土壤中才开始萌芽。</p>
+<p>人们对一元二次方程的认识过程长达三千多年，直到16世纪的韦达（Vieta，1540~1603）才基本弄清楚一般情况下一元二次方程方程的解，并给出了根与系数的关系。其中根与系数的关系，对我们认识一元二次方程方程以及更高次方程很有帮助，所以在这里我想描述一下这个关系。</p>
+<p>如果一般的一元二次方程可以表示为：<br>$$<br>ax^2 + bx + c = 0, (a \neq 0, x \in \mathbb{C}) \tag{1}<br>$$<br>那么一元二次方程的根（$x_1$, $x_2$）与系数（$a$, $b$, $c$）的关系如下：</p>
+<ul>
+<li>$x_1 + x_2 = -b/a$</li>
+<li>$x_1 \cdot x_2 = c/a$</li>
+</ul>
+<p>这个关系可以不通过求根公式得到，也就是说上面的关系是一个关于一元二次方程非常基本的结论。</p>
+<blockquote>
+<p><strong>根与系数关系的推导：</strong></p>
+<p>首先我们根据<strong>代数基本定理</strong>（不知道代数基本定理，可以先把它看作：方程最高次是多少，就有多少个根）知道一元二次方程有两个根。根据这个前提条件，我们可以将原先的一元二次方程表示为：$a(x - x_1)(x - x_2) = 0, (a \neq 0, x \in \mathbb{C})$</p>
+<p>然后，我们把上面的式子展开，就可以得到：<br>$$<br>ax^2 - a(x_1 + x_2)x + ax_1x_2 = 0, (a \neq 0, x \in \mathbb{C}) \tag{2}<br>$$<br>对比公式 (1) 和公式 (2)，可以得到根与系数的关系。</p>
+<p>最近还有人根据上面的关系得到了一种一元二次方程的解法，挺有意思的，这里也说一下。</p>
+<p>首先可以根据根与系数的关系式得到：<br>$$<br>r=-b/2a \tag{3}<br>$$<br>令 $x_1 = r + s$，$x_2 = r - s$，所以可以从根与系数关系中进一步得到：<br>$$<br>x_1x_2 = r^2 - s^2 = c/a \tag{4}<br>$$<br>从而可以比较容易地计算出：<br>$$<br>s = \pm \sqrt{r^2 - c/a} \tag{5}<br>$$<br>得到两个根 $x_1, x_2$</p>
+</blockquote>
+<p>二次方程的问题研究清楚后，三次、四次方程直到公元1500年左右才得到了解的公式。</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            
+              <p>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E7%AC%94%E8%AE%B0">笔记</a>
+                  &nbsp;
+                
+              </p>
+            
+            <p>
+              <i class="iconfont icon-tag"></i>
+              
+                <a class="hover-with-bg" href="/tags/%E8%BF%91%E4%B8%96%E4%BB%A3%E6%95%B0">近世代数</a>
+              
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -180,6 +245,11 @@
   <script src="/js/lazyload.js" ></script>
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
   <script src="/lib/prettify/prettify.min.js" ></script>
   <script>
@@ -195,7 +265,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "标签&nbsp;",
+        "绪论&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 100,
