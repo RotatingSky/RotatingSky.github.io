@@ -140,7 +140,11 @@ s=T(r) \tag{2}</script><h2 id="2-1-imadjust-和-stretchlim-函数"><a href="#2-1
 <p>stretchlim 默认会指定计算灰度图像 f 中所有像素值底部和顶部饱和度的 1%，而更加通用的方法是：</p>
 <pre><code class="lang-matlab">low_high = stretchlim(f, tol)    % 其中 tol = [low_frac, high_frac]，指定了图像低和高像素值饱和度的百分比
 </code></pre>
-<h2 id="2-2-对数及对比度扩展变换"><a href="#2-2-对数及对比度扩展变换" class="headerlink" title="2.2. 对数及对比度扩展变换"></a>2.2. 对数及对比度扩展变换</h2>
+<h2 id="2-2-对数及对比度扩展变换"><a href="#2-2-对数及对比度扩展变换" class="headerlink" title="2.2. 对数及对比度扩展变换"></a>2.2. 对数及对比度扩展变换</h2><p>对数变换可以表示为：</p>
+<pre><code class="lang-matl">g = c * log(1 + (f))
+</code></pre>
+<p>对数变换的一项主要应用是压缩动态范围。</p>
+
             <hr>
           </div>
           <br>
