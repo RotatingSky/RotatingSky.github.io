@@ -8,7 +8,7 @@
     <link href="undefined2021/09/12/science/computer/DIP/chapter_2/"/>
     <url>2021/09/12/science/computer/DIP/chapter_2/</url>
     
-    <content type="html"><![CDATA[<h1 id="1-背景知识"><a href="#1-背景知识" class="headerlink" title="1. 背景知识"></a>1. 背景知识</h1><p>在空间域对图像的处理，可以表示为：</p><script type="math/tex; mode=display">g(x,y) = T[f(x,y)] \tag{1}$​​$其中，$f(x,y)$ 是输入图像，$g(x,y)$ 是输出图像，$T$ 是对图像 $f$ 的算子，作用于点 $(x,y)$ 定义的邻域。此外，$T$ 还可以对一组图像进行处理，例如为了**降低噪声而叠加 K 幅图像**。# 2. 灰度变换函数灰度变换的邻域为 $1x1$，若用 $r$ 表示图像 $f$ 中的灰度，$s$ 表示图像 $g$ 中的灰度，而灰度变换通常可以写为:</script><p>s=T(r) \tag{2}</p><p>$$</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-背景知识"><a href="#1-背景知识" class="headerlink" title="1. 背景知识"></a>1. 背景知识</h1><p>在空间域对图像的处理，可以表示为：</p><script type="math/tex; mode=display">g(x,y) = T[f(x,y)] \tag{1}$​​$其中，$f(x,y)$ 是输入图像，$g(x,y)$ 是输出图像，$T$ 是对图像 $f$ 的算子，作用于点 $(x,y)$ 定义的邻域。此外，$T$ 还可以对一组图像进行处理，例如为了**降低噪声而叠加 K 幅图像**。# 2. 灰度变换函数灰度变换的邻域为 $1x1$，若用 $r$ 表示图像 $f$ 中的灰度，$s$ 表示图像 $g$ 中的灰度，而灰度变换通常可以写为:$$s=T(r) \tag{2}</script>]]></content>
     
     
     <categories>
