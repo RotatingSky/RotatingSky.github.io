@@ -128,7 +128,19 @@
 g(x,y) = T[f(x,y)] \tag{1}</script><p>其中，$f(x,y)$ 是输入图像，$g(x,y)$ 是输出图像，$T$ 是对图像 $f$ 的算子，作用于点 $(x,y)$ 定义的邻域。此外，$T$ 还可以对一组图像进行处理，例如为了<strong>降低噪声而叠加 K 幅图像</strong>。</p>
 <h1 id="2-灰度变换函数"><a href="#2-灰度变换函数" class="headerlink" title="2. 灰度变换函数"></a>2. 灰度变换函数</h1><p>灰度变换的邻域为 $1x1$，若用 $r$ 表示图像 $f$ 中的灰度，$s$ 表示图像 $g$ 中的灰度，而灰度变换通常可以写为:</p>
 <script type="math/tex; mode=display">
-s=T(r) \tag{2}</script>
+s=T(r) \tag{2}</script><p>matlab 中可以用下面的方法对灰度图像进行灰度变换：</p>
+<pre><code class="lang-matlab">g = imadjust(f, [low_in, high_in], [low_out, high_out], gamma)
+</code></pre>
+<p>获取负片也可以用下面的语句：</p>
+<pre><code class="lang-matlab">g = imcomplement(f)
+</code></pre>
+<p>可以通过 stretchlim 获取灰度图像 $f$​ 的主要像素灰度范围，用于完成对比度拉伸：</p>
+<pre><code class="lang-matlab">low_high = stretchlim(f)    % 其中的 low_high 是两元素向量
+</code></pre>
+<p>stretchlim 默认会指定计算灰度图像 f 中所有像素值底部和顶部饱和度的 1%，而更加通用的方法是：</p>
+<pre><code class="lang-matlab">low_high = stretchlim(f, tol)    % 其中 tol = [low_frac, high_frac]，指定了图像低和高像素值饱和度的百分比
+</code></pre>
+
             <hr>
           </div>
           <br>
